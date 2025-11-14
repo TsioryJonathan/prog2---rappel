@@ -1,5 +1,7 @@
 package org.prog2rappel;
 
+import java.util.Date;
+
 public class Teacher extends User{
 
     public enum speciality{
@@ -11,7 +13,7 @@ public class Teacher extends User{
     private speciality speciality;
 
 
-    public Teacher(int id, String lastName, String firstName, java.time.Instant birthDate, String email, String phone, speciality speciality) {
+    public Teacher(int id, String lastName, String firstName, Date birthDate, String email, String phone, speciality speciality) {
         super(id, lastName, firstName, birthDate, email, phone);
         this.speciality = speciality ;
     }

@@ -4,16 +4,17 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.Instant;
+
+import java.util.Date;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public abstract class User {
+public class User {
     private int id;
     private String lastName;
     private String firstName;
-    private Instant birthDate;
+    private Date birthDate;
     private String email;
     private String phone;
 }
