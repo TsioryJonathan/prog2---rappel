@@ -1,16 +1,16 @@
 package org.prog2rappel;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 
-import java.time.LocalDate;
-import java.util.List;
+import java.time.Instant;
 
+@Data
 @AllArgsConstructor
 public class Exam {
     private int id;
     private String title;
     private Course course;
-    private LocalDate date;
+    private Instant date;
     private int coeff;
-    private List<Grade> grades;
 }

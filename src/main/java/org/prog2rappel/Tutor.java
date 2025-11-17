@@ -1,7 +1,10 @@
 package org.prog2rappel;
 
+import lombok.Data;
+
 import java.util.Date;
 
+@Data
 public class Tutor extends User{
     private String linkWithStudent;
 
